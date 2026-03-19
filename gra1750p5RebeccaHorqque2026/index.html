@@ -3,26 +3,124 @@
 <head>
 <meta charset="utf-8">
 <title>Umai Bakes | Rebecca Horqque, 2026</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Carattere&family=Coiny&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Jim+Nightshade&family=Kings&family=Pacifico&family=Pirata+One&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Borel&family=Carattere&family=Coiny&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Jim+Nightshade&family=Kings&family=Pacifico&family=Pirata+One&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 	
 	<style>
 		
 		body {
-			background-color: lightpink;
+			background-image: url("background.jpg");
+			background-color:rgba(143, 98, 69, 0.5);
+			font-family: "Coiny", system-ui;
 			
 		}
+		
+		
+		
+		h1 {
+			color:white;
+			font-size:50px;
+			
+		}
+		
+		h2 {
+			color:white;
+			font-size: 40px;
+			
+		}
+		
+		h3 {
+			color:white;
+		}
+		
+		p {
+			color:white;
+		}
+		
+		banner p {
+			font-family: "Borel", cursive;
+			font-size:35px;
+			font-style:italic;
+			position:absolute;
+			text-align:center;
+			vertical-align:flex-end;
+			
+		}
+		
+		
+		banner {
+		background-image:url("melon.jpg");
+		background-size:cover;
+			background-repeat:no-repeat;
+			background-position:center center;
+			border-radius:30px;
+			display:block;
+			height: 550px;
+			width:100%;
+			position: relative;
+			margin:auto;
+			
+		}
+		
+		banner::before {
+			border-radius:30px;
+			content: "";
+			position:absolute;
+			inset:0;
+			background: rgba(0,0,0,0.3)
+			
+		}
+		
 		
 		wrapper {
 			display:block;
 			width:900px;
 			margin:auto;
-			background-color:mintcream;
+			background-color:lightpink;
 			padding:20px;
 			text-align:center;
+			border: 7px solid #734226;
+			border-radius:30px;
+			
+			
 		}
 		
 		header {
 			text-align: center;
+			
 		}
+		
+		nav p {
+			background-color:lightgoldenrodyellow;
+			padding:20px;
+			border: thick solid white;
+			border-radius:50px;
+			width: 17%;
+			margin:15px;
+			display:inline-block;
+			vertical-align:flex-end;
+			font-size:25px;
+			
+		}
+		
+		nav p a {
+			color:pink;
+		}
+		nav p:hover {
+			background-color:#CDF6F4;
+			
+		}
+		
+		nav p:hover a {
+			color:white;
+		}
+		
+		
+		
 		
 		
 	</style>
@@ -32,28 +130,47 @@
 <body>
 	
 	<header>
-	<img src="logobread.png" width="200" alt="logo">
-	</header>
+	<img src="logo.png" width="200" alt="logo">
 	
+	</header>
 	<wrapper>
-	<h1>Welcome to Umai Bakes!</h1>
+		
+		<h1>Welcome to Umai Bakes!</h1>
+	<main>
+	<banner>
+			
+	<p>Where Tradition Meets Sweetness</p>
+	</banner>
+	</main>
+	
+	
 	<h2>Enjoy our signature Japanese pastries and Milk Tea!</h2>
 		
+	<div>
 		<nav> 
 			<p><a href="#Menu">Menu</a></p>
 			<p><a href="#Order">Order</a></p>
 			<p><a href="#Locations">Locations</a></p>
 		
 		</nav>
+	</div>
 		
 	<h2>Try our favorite</h2>
 		
+	<div>
 		<h3>Bread</h3>
 		<img src="anpan.jpg" width="300" alt="bread">
+	</div>
+		
+	<div>
 		<h3>Dessert</h3>
 		<img src="mochi.jpg" width="300" alt="mochi">
+	</div>
+		
+	<div>
 		<h3>Drinks</h3>
 		<img src="boba.jpg" width="300" alt="boba">
+		</div>
 	
 		
 		
