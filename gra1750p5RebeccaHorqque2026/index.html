@@ -15,6 +15,7 @@
 		body {
 			background-image: url("background.jpg");
 			background-color:rgba(143, 98, 69, 0.5);
+			background-size:contain;
 			font-family: "Coiny", system-ui;
 			
 		}
@@ -31,10 +32,15 @@
 			color:white;
 			font-size: 40px;
 			
+			margin:auto
+			
+			
 		}
 		
 		h3 {
 			color:white;
+			font-size:35px;
+		
 		}
 		
 		p {
@@ -45,9 +51,9 @@
 			font-family: "Borel", cursive;
 			font-size:35px;
 			font-style:italic;
-			position:absolute;
+			/*position:absolute;*/
 			text-align:center;
-			vertical-align:flex-end;
+			
 			
 		}
 		
@@ -63,25 +69,28 @@
 			width:100%;
 			position: relative;
 			margin:auto;
+			padding-top: 200px;
+			box-sizing:border-box;
+			text-align:center;
 			
 		}
 		
-		banner::before {
+		/*banner::before {
 			border-radius:30px;
 			content: "";
 			position:absolute;
 			inset:0;
 			background: rgba(0,0,0,0.3)
 			
-		}
+		}*/
 		
 		
 		wrapper {
 			display:block;
-			width:900px;
+			width:750px;
 			margin:auto;
 			background-color:lightpink;
-			padding:20px;
+			padding:35px;
 			text-align:center;
 			border: 7px solid #734226;
 			border-radius:30px;
@@ -90,7 +99,8 @@
 		}
 		
 		header {
-			text-align: center;
+			text-align:center
+			
 			
 		}
 		
@@ -99,11 +109,11 @@
 			padding:20px;
 			border: thick solid white;
 			border-radius:50px;
-			width: 17%;
-			margin:15px;
-			display:inline-block;
-			vertical-align:flex-end;
+			width:23%;
+			margin:20px auto;
+			display:block;
 			font-size:25px;
+			vertical-align:center;
 			
 		}
 		
@@ -119,7 +129,21 @@
 			color:white;
 		}
 		
+		div img {
+			border-radius:20px;
+			width:400px;
+			height:400px;
+			object-fit:cover;
+			object-position:20% 30%;
+		}
 		
+		.drinks {
+			object-position:50% 60%;
+		}
+		
+		footer p {
+			font-size:15px;
+		}
 		
 		
 		
@@ -130,7 +154,8 @@
 <body>
 	
 	<header>
-	<img src="logo.png" width="200" alt="logo">
+	<img src="logo2.png" width="200" alt="logo">
+		
 	
 	</header>
 	<wrapper>
@@ -144,10 +169,11 @@
 	</main>
 	
 	
-	<h2>Enjoy our signature Japanese pastries and Milk Tea!</h2>
+		<h2>Enjoy our signature</h2> <h2> Japanese pastries and Milk Tea!</h2>
 		
 	<div>
 		<nav> 
+			<p><a href="#Home">Home</a></p>
 			<p><a href="#Menu">Menu</a></p>
 			<p><a href="#Order">Order</a></p>
 			<p><a href="#Locations">Locations</a></p>
@@ -155,9 +181,9 @@
 		</nav>
 	</div>
 		
-	<h2>Try our favorite</h2>
+	<h3>Try our favorites</h3>
 		
-	<div>
+	<div id="#Menu">
 		<h3>Bread</h3>
 		<img src="anpan.jpg" width="300" alt="bread">
 	</div>
@@ -169,8 +195,8 @@
 		
 	<div>
 		<h3>Drinks</h3>
-		<img src="boba.jpg" width="300" alt="boba">
-		</div>
+		<img src="boba.jpg" width="300" alt="boba" class="drinks">
+	</div>
 	
 		
 		
